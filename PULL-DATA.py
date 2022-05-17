@@ -17,7 +17,6 @@ depth = '1 hours ago'
 def data(ticker, interval, depth):
 
     Bdata = client.get_historical_klines(ticker, interval, depth)
-    print(Cdata)
     df = pd.DataFrame(Bdata)
     
     if not df.empty:
