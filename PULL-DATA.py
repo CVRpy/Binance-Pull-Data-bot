@@ -5,10 +5,11 @@ import pandas as pd
 import numpy as np
 
 #PUT YOUR ACCOUNT PKEY AND SKEY:
-Pkey = 'SokQ6E89FvlsjySTBDGuR716TumpC9gRGbEnRmQAJE3erxsvrXevpx'
-Skey = 'dwOHIxzFCdJPhwzSA3XU6ujkjqUoVYCvXIWcs6g1fLTwEB9cbhqZp'
+Pkey = ''
+Skey = ''
 #######################################
 client = Client(api_key=Pkey, api_secret=Skey)
+client = Client()
 tickers = ['BTCUSDT'] #YOU CAN CHOOSE ANTHOER COINS
 interval = Client.KLINE_INTERVAL_1MINUTE
 depth = '1 hours ago'
